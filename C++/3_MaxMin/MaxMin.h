@@ -1,7 +1,7 @@
 #ifndef _MAXMIN_HEAD_
 #define _MAXMIN_HEAD_
 
-#define MAX(x,y) x>=y?x:y
-#define MIN(x,y) x<=y?x:y
+int Max(int x,int y);
+int Min(int x,int y);
 
 #endif
