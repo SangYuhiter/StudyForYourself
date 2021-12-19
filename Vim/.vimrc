@@ -80,6 +80,12 @@ set laststatus=2
 "在状态栏显示光标的当前位置（位于哪一行哪一列）
 set  ruler
 
+"分屏时窗口大小调整
+nnoremap <silent> W :resize +1<CR>
+nnoremap <silent> S :resize -1<CR>
+nnoremap <silent> D :vertical resize +1<CR>
+nnoremap <silent> A :vertical resize -1<CR>
+
 "------------------------------------------------------
 
 "搜索
