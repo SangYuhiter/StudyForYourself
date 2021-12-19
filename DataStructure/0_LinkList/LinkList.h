@@ -13,6 +13,8 @@ class LinkList{
 public:
     //default init the LinkList as dubble link
     LinkList(){
+        head = new NODE();
+        tail = new NODE();
         head->data = tail->data = 0;
         head->priv = head->next = tail;
         tail->priv = tail->next = head;
@@ -24,23 +26,27 @@ public:
     NODE* GetTail(){
         return tail;
     };
-    int AddNode(int data){
+    void AddNode(int data){
         NODE* add_node = new NODE();
         add_node->data = data;
 
         //insert to tail
         add_node->next = tail;
         add_node->priv = tail->priv;
+        tail->priv->next = add_node;
         tail->priv = add_node;
-        return 0;
+
+        count++;
     };
     void PrintLinkList(){
-        NODE* print_node = head;
-        std::cout<<"head"<<"("<<&head<<")";
-        while(print_node->next != tail){
-            std::cout<<"-->"<<print_node->data<<"("<<&print_node<<")";
+        NODE* print_node = head->next;
+        std::cout<<count<<" Nodes:";
+        std::cout<<"head"<<"("<<head->priv<<","<<head<<","<<head->next<<")";
+        while(print_node != tail){
+            std::cout<<"-->"<<print_node->data<<"("<<print_node->priv<<","<<print_node<<","<<print_node->next<<")";
+            print_node = print_node->next;
         }
-        std::cout<<"-->tail"<<"("<<&tail<<")";
+        std::cout<<"-->tail"<<"("<<tail->priv<<","<<tail<<","<<tail->next<<")";
         std::cout<<std::endl;
     };
 private:
