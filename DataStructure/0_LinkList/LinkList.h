@@ -20,6 +20,22 @@ public:
         tail->priv = tail->next = head;
         count = 0;
     };
+    ~LinkList(){
+        NODE* temp1 = head;
+        NODE* temp2 = head;
+        while(temp1 != nullptr){
+            if(temp1 == tail){
+                temp1->next = nullptr;
+            }
+            temp1 = temp1->next;
+            std::cout<<"delete "<<temp2->data<<",count:"<<count<<std::endl;
+            delete temp2;
+            temp2 = temp1;
+            if(temp1 != head && temp1 != tail){
+                count--;
+            }
+        }
+    }
     NODE* GetHead(){
         return head;
     };
