@@ -27,13 +27,6 @@ typedef struct Node{
 }NODE;
 
 
-void PrintRBTree(Node* root){
-    if(root == nullptr)
-        return;
-    PrintRBTree(root->left_child);
-    std::cout<<"data:"<<root->data<<",color:"<<NodeColorString[static_cast<unsigned int>(root->color)]<<std::endl;
-    PrintRBTree(root->right_child);
-}
 
 class RedBlackTree{
 public:
@@ -51,6 +44,9 @@ public:
     Node* Root(){
         return root;
     }
+    Node* Nil(){
+        return nil;
+    }
 
     //Pure insert child as a binary tree
     void InsertLeftChild(Node* parent,Node* child);
@@ -59,4 +55,7 @@ private:
     NODE* root;
     NODE* nil;
 };
+
+void PrintRBTree(RedBlackTree* rbtree);
+void PrintTreeNode(Node* node,Node* nil);
 #endif
