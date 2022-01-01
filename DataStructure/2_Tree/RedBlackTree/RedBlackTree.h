@@ -56,6 +56,12 @@ private:
     NODE* nil;
 };
 
+//use left_child->root->right_child print tree in multi-lines to print more infos
 void PrintRBTree(RedBlackTree* rbtree);
+
+//use left_child->root->right_child print tree with "()" in one line
+void PrintRBTreeByLevel(RedBlackTree* rbtree);
+
 void PrintTreeNode(Node* node,Node* nil);
+void PrintTreeNodeByLevel(Node* node,Node* nil);
 #endif
