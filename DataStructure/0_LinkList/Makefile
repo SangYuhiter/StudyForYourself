@@ -1,4 +1,4 @@
-exe_name=main
+exe_name=main.out
 program_name=LinkList
 objects_name=$(program_name).o
 
