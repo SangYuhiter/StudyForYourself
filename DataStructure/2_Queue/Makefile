@@ -1,5 +1,5 @@
-exe_name=main
-program_name=Stack
+exe_name=main.out
+program_name=Queue
 objects_name=$(program_name).o
 
 $(exe_name):$(objects_name)

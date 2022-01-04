@@ -1,3 +1,3 @@
-# Data Structure --- Stack
+# Data Structure --- Queue
 
 
