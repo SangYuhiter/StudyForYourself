@@ -57,7 +57,7 @@ set cursorline
 "set cursorcolumn
 
 "设置行宽，即一行显示多少个字符
-set textwidth=80
+"set textwidth=80
 
 "自动折行，即太长的行分成几行显示
 "set wrap
@@ -157,6 +157,9 @@ set wildmode=longest:list,full
 call plug#begin('~/.vim/plugged')
     Plug 'preservim/nerdtree'
     Plug 'yegappan/taglist'
+    Plug 'vim-scripts/mru.vim'
+    Plug 'ctrlpvim/ctrlp.vim'
+    Plug 'vim-scripts/OmniCppComplete'
 call plug#end()
 
 "nerdtree 配置
@@ -213,6 +216,28 @@ nmap <C-\>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-\>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 nmap <C-\>S :cs find t struct <C-R>=expand("<cword>")<CR> {<CR>
+
+"quickfix模式
+autocmd Filetype c,cpp map <buffer> <leader><space> :w<cr>:make<cr>
+
+"代码补全
+set completeopt=preview,menu
+
+"omnicppcomplete settings
+set nocp
+filetype plugin on
+set enc=utf-8
+set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
+let OmniCpp_MayCompleteDot = 1
+let OmniCpp_MayCompleteArray = 1
+let OmniCpp_MayCompleteScope = 1
+let OmniCpp_SelectFirstItem = 2
+let OmniCpp_NamespaceSearch = 2
+let OmniCpp_ShowPrototypeInAbbr = 1
+let OmniCpp_GlobalScopeSearch = 1
+let OmniCpp_DisplayMode = 1
+let OmniCpp_DefaultNamespaces = ["std"]
+
 
 "-------------------------------------------------------------------------------------------
 "自动添加文件头
