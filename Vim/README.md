@@ -10,3 +10,6 @@ cp .vimrc ~/
 # 3.vim init
 entry vim,then input vim-plug order:
 :PlugInstall
+
+# 4.install some useful tools
+sudo apt install ctags cscope
