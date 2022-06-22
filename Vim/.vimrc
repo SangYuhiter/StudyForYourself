@@ -76,6 +76,19 @@ set sidescrolloff=15
 
 "是否显示状态栏。0 表示不显示，1 表示只在多窗口时显示，2 表示显示
 set laststatus=2
+set statusline=
+set statusline+=%-3.3n
+"filename
+set statusline+=%F\
+"flags
+set statusline+=%h%m%r%w
+set statusline+=%k
+"right align
+set statusline+=%=
+"current char
+set statusline+=%2*0x%-8B\
+"offset
+set statusline+=%-10.(%l,%c%V%)\ %<%P
 
 "在状态栏显示光标的当前位置（位于哪一行哪一列）
 set  ruler
