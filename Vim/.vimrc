@@ -159,7 +159,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'yegappan/taglist'
     Plug 'vim-scripts/mru.vim'
     Plug 'ctrlpvim/ctrlp.vim'
-    Plug 'vim-scripts/OmniCppComplete'
 call plug#end()
 
 "nerdtree 配置
