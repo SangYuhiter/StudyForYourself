@@ -21,6 +21,9 @@ export REPO_URL='https://mirrors.tuna.tsinghua.edu.cn/git/git-repo'
 
 # jobs list
 alias jobs='jobs -l'
+
+# source .bashrc
+source ~/.bashrc
 ```
 # 4.useful shell script
 ## (1).cctagsfiles.sh---get the ctags file list
