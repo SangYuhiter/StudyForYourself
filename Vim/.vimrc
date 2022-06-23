@@ -193,6 +193,10 @@ set tags=tags
 set tags+=./tags    " add current directory's generated tags file
 set tags+=~/program/tags " add new tags file
 
+"MRU 配置
+",be映射打开MRU
+map ,be :MRU<CR>
+
 "cscope 配置
 if has("cscope")
     "设置cscope二进制可执行文件的绝对路径
