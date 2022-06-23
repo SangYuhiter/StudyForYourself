@@ -176,7 +176,7 @@ call plug#end()
 
 "nerdtree 配置
 ",d映射打开目录树
-map ,d :NERDTreeToggle<CR>
+nnoremap <silent> ,d :NERDTreeToggle %:p:h<CR>
 "隐藏文件夹可见
 let NERDTreeShowHidden=1
 "目录树放在右侧
