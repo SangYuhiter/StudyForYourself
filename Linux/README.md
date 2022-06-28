@@ -3,6 +3,7 @@
 basic:      ```sudo apt install git make gcc curl```
 vim-edit:   ```sudo apt install vim ctags cscope```
 terminal:   ```sudo apt install byobu```
+info-check: ```sudo apt install tree```
 
 # 2.Linux kernel compile
 dependencies:   ```sudo apt install make gcc clang bison dwarves jfsutils reiserfsprogs xfsprogs btrfs-progs quota libelf-dev libssl-dev```
@@ -21,6 +22,9 @@ export REPO_URL='https://mirrors.tuna.tsinghua.edu.cn/git/git-repo'
 
 # jobs list
 alias jobs='jobs -l'
+
+# find file in AOSP root
+alias findaosp='find $(croot && pwd) -name'
 
 # source .bashrc
 source ~/.bashrc
