@@ -41,7 +41,7 @@ reference:https://www.runoob.com/design-pattern/design-pattern-tutorial.html
 - 模板模式（Template Pattern）
 - 访问者模式（Visitor Pattern）
 
-![the-relationship-between-design-patterns](../the-relationship-between-design-patterns.jpg)
+![the-relationship-between-design-patterns](https://github.com/SangYuhiter/StudyForYourself/blob/main/DesignMode/the-relationship-between-design-patterns.jpg)
 
 # 设计模式的六大原则
 
