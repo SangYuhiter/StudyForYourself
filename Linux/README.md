@@ -3,6 +3,19 @@ look at the UbuntuInit/README.md
 
 # 1.install useful tools
 
+switch the software source
+tsinghua: https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
+```
+# back up the source file
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+# copy the tsinghua source
+sudo cp ./sources.list.tsinghua /etc/apt/
+# using tsinghua soure override the source file
+sudo cp /etc/apt/sources.list.tsinghua /etc/apt/sources.list
+# update the source
+sudo apt update
+```
+
 - basic:      ```sudo apt install git make gcc curl```
 - vim-edit:   ```sudo apt install vim ctags cscope```
 - terminal:   ```sudo apt install byobu```
