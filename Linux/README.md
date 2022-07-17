@@ -16,7 +16,7 @@ sudo cp /etc/apt/sources.list.tsinghua /etc/apt/sources.list
 sudo apt update
 ```
 
-- basic:      ```sudo apt install git make gcc curl```
+- basic:      ```sudo apt install git git-email make gcc curl```
 - vim-edit:   ```sudo apt install vim ctags cscope```
 - terminal:   ```sudo apt install byobu```
 - info-check: ```sudo apt install tree```
