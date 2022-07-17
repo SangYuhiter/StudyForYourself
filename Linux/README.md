@@ -5,7 +5,7 @@ look at the UbuntuInit/README.md
 
 switch the software source
 tsinghua: https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
-```
+```Bash
 # back up the source file
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 # copy the tsinghua source
