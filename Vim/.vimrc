@@ -180,7 +180,7 @@ nnoremap <silent> ,d :NERDTreeToggle %:p:h<CR>
 "隐藏文件夹可见
 let NERDTreeShowHidden=1
 "目录树放在右侧
-let NERDTreeWinPos=1
+let NERDTreeWinPos=right
 
 "taglist 配置
 ",t映射打开taglist
