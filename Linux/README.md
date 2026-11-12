@@ -30,6 +30,12 @@ make -j4
 ```
 # 3.bashrc useful commond
 ```
+
+# ll alias
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
 # cctags to generate the cscope
 alias cctags='ctags -L ctags.txt --c++-kinds=+px --fields=+iaKSz --extra=+q;cscope -bkq -i ctags.txt'
 
