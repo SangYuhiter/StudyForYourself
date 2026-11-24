@@ -13,6 +13,7 @@ set showcmd
 
 "支持使用鼠标
 "set mouse=a
+set mouse=
 
 "使用 utf-8 编码
 set encoding=utf-8
