@@ -222,7 +222,7 @@ if has("cscope")
 endif
 
 "cscope 键位映射
-nmap :cs find :cs f
+"nmap :cs find :cs f
 
 nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>
 nmap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>
